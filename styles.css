@@ -1,80 +1,259 @@
+/* Normalize stuff=============================================================== */
 
-h1,h2,h3,h4,h5,h6{
-    font-family: 'Montserrat', sans-serif;
+/* font-family: 'Comforter', cursive;
+font-family: 'Manrope', sans-serif; */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
 }
-p
-{font-family:Ubuntu;
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
 }
-body{ margin:0;
-    min-width:100%;
-  }
-a{color:#582F0E;
-text-decoration: none;}
+body {
+	line-height: 1;
+	min-width:100%;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
 
- #main{
-     background-color: #e6ccb2;
-     margin:0;
+html {
+  box-sizing: border-box;
+  font-family: 'Manrope', sans-serif;
+}
+/* 
+========================================================================================= */
+body{
+	display:flex;
+	/* justify-content: center;
+/* align-items: center; */ */
+}
+main{min-width:100%;
+background-color:#00c2cb;
+/* text-align:center; */
+color:white;
 
-} 
- #title {padding: 5px auto;
-    text-align: center;
-    font-weight: 700;
-    color:#582F0E;
+min-height: 100vh;
+}
 
-} 
- #img-div {
-     background-color: beige;
-     padding: 1.5rem 0;
-     box-shadow: -5px 5px 7px #582F0E;
-     
-
-} 
- #image { 
-    max-width: 40%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-padding: 10% auto 5%;
-box-shadow: -5px 5px 7px #582F0E;}
-
-
- #img-caption{  
-     font-size: smaller;
-     text-align: center;
-    padding: 5% auto 2%; }
- 
-    
-
- #tribute-info{
-    padding: 2% 7%;
-     
-
-} 
-.header-type{color:#582F0E;
-    font-size: 1.25rem;
+/* ==============================
+Typography
+================================ */
+h1{
+    font-size: 2rem;
+}
+/* h2{font-size: 1.3rem;} */
+h3{font-size:1.2rem;}
+/* ================================
+Nav
+=================================== */
+#header{
+}
+#nav-bar{
+	background-color: #b42627;
+	min-width: 100%;
+	padding:15px 5px;
+	align-items: center;
+	position:fixed;
+	top:0;
 
 }
-.dateslist{ 
-    width: 80%;
-    background-color: beige ;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 2% 7%;
-    box-shadow: -5px 5px 7px #582F0E;
+.nav-link{
+	font-family:comforter;
+	font-size: 1.2rem;
+	color: wheat;
+	text-decoration: none;
+}
+.nav-link:hover, .nav-item:focus {
+	background-color: turquoise;
+	color: #545454;
+}
+
+.nav-container{ 
+display:flex;
+justify-content:space-around ;
 
 }
-#tribute-link{
-  
-    color:#582F0E; 
-    text-decoration: none;
-    
-}
-.endpart{
 
-    padding: 2% 7%;
+/* ==================================
+Top part
+=======================================
+ */
+ #header-img {
+	width: 6rem;
+	float: left;
+	margin: 2px 30px;
+	padding-top: 60px;
 }
-.lastpara{
-    font-size:1.1rem;
-    color:#582F0E;
+
+
+ .no-fog{
+	padding-top:15px ;
+	 font-family:comforter;
+	 font-size: 2.2rem;
+	 text-shadow:2px 2px #545454;
+	 color:wheat;
+	display: flex;
+	justify-content: center;
+	align-items:center;
+	
 }
+
+.glasses{
+	font-family:Manrope;
+	text-align:center;
+	color:white;
+	padding: 20px 0;
+	font-size: 2rem;
+}
+#prices{
+
+}
+	 
+ #about{
+	padding: 5px 20px;
+	margin: 1% 5%;
+	text-align: center;
+	line-height: 1.5;
+ }
+/* ===============================
+Pricing panel
+=============================== */
+
+.panel{
+ background-color:#e9d8a6;
+ color:#545454;
+font-size: 18px;
+border-radius:10px;
+padding: 15px 50px;
+margin:5% auto;
+width:100%;   
+max-width: 960px;
+display:flex;
+justify-content: center;
+flex-direction:column;
+
+}
+
+.panel-header{
+color: #b42627;
+font-weight:700;}
+
+.panel-label{
+	font-size: 1.5rem;
+	padding:20px;
+	color:#b42627;
+	display:flex;
+	justify-content: center;
+}
+
+.pricing-plan{
+	line-height: 1.5;
+	border-bottom: 1px solid#545454;
+	margin:0 auto;
+	text-align: center;
+	padding:0 3% 0 1%;
+}
+.pricing-plan:last-child{
+	border-bottom: none;}
+.pricing-button{
+	border:1px solid #545454;
+	background-color: #00c2cb;
+	border-radius: 10px;
+	color:#b42627;
+	display: inline-block;
+	padding: 15px 35px;
+	text-decoration:none;
+	margin: 25px 0;
+	transition:background-color 200ms ease-in-out;
+}
+.pricing-header{
+	text-transform:uppercase;
+	font-size: 1.3rem;;
+	color: #b42627;;
+}
+.pricing-button:hover, .pricing-button:focus  {
+	background-color: #545454;
+	color: white;
+}
+.product{
+	display: flex;
+	justify-content: center;
+	margin:20px auto;
+	width:300px;
+	border: solid #b42627 5px;
+	border-radius: 5%;
+}
+@media (min-width:900px){
+	.panel{
+		flex-direction: row;
+	}
+	.panel-header{font-size: 1rem;
+	text-align: center;}
+	.pricing-plan{border-bottom:none;
+	border-right: 1px solid #545454;}
+	.pricing-plan:last-child{
+		border-right:none;
+	}
+}
+
+/* =====================
+Link to video
+========================= */
+#video{
+	padding:2% 5px ;
+	margin:10px auto;
+	display: flex;
+	align-items: center;
+	justify-content: center;}
+	.lastchance{
+		color: #545454;
+		text-align: center;
+		padding: 1% 5%;
+	}
+.orderform{
+	text-align: center;
+}
+	#form{
+		padding:2% 10% 3%;
+		font-size: 1.2rem;
+	}
+	#submit {
+	
+	}
+.btn{background-color: #b42627;
+	color: #e9d8a6;
+	padding: 3px 15px;
+	border:1px solid #e9d8a6;
+	border-radius: 5%;}
