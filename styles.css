@@ -1,0 +1,80 @@
+
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Montserrat', sans-serif;
+}
+p
+{font-family:Ubuntu;
+}
+body{ margin:0;
+    min-width:100%;
+  }
+a{color:#582F0E;
+text-decoration: none;}
+
+ #main{
+     background-color: #e6ccb2;
+     margin:0;
+
+} 
+ #title {padding: 5px auto;
+    text-align: center;
+    font-weight: 700;
+    color:#582F0E;
+
+} 
+ #img-div {
+     background-color: beige;
+     padding: 1.5rem 0;
+     box-shadow: -5px 5px 7px #582F0E;
+     
+
+} 
+ #image { 
+    max-width: 40%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+padding: 10% auto 5%;
+box-shadow: -5px 5px 7px #582F0E;}
+
+
+ #img-caption{  
+     font-size: smaller;
+     text-align: center;
+    padding: 5% auto 2%; }
+ 
+    
+
+ #tribute-info{
+    padding: 2% 7%;
+     
+
+} 
+.header-type{color:#582F0E;
+    font-size: 1.25rem;
+
+}
+.dateslist{ 
+    width: 80%;
+    background-color: beige ;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2% 7%;
+    box-shadow: -5px 5px 7px #582F0E;
+
+}
+#tribute-link{
+  
+    color:#582F0E; 
+    text-decoration: none;
+    
+}
+.endpart{
+
+    padding: 2% 7%;
+}
+.lastpara{
+    font-size:1.1rem;
+    color:#582F0E;
+}
